@@ -11,10 +11,10 @@ http://www.mulesoft.org/schema/mule/sns http://www.mulesoft.org/schema/mule/sns/
 		<http:listener-connection host="0.0.0.0" port="8081" />
 	</http:listener-config>
 	<sns:config name="Amazon_SNS_configuration" doc:name="Amazon SNS configuration" doc:id="dd44135b-d42b-49c4-8796-05b519d73a27" >
-		<sns:basic-connection accessKey="AKIAJWKZDPLHRO4WPP7A" secretKey="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" />
+		<sns:basic-connection accessKey="*****" secretKey="****" />
 	</sns:config>
 	<s3:config name="Amazon_S3_Configuration" doc:name="Amazon S3 Configuration" doc:id="545543eb-a343-4995-9054-f526f0bfe7a1" >
-		<s3:basic-connection accessKey="AKIAJWKZDPLHRO4WPP7A" secretKey="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" />
+		<s3:basic-connection accessKey="****" secretKey="****" />
 	</s3:config>
 	<flow name="awsfilepollingFlow" doc:id="0e9aa3fa-b75d-42d5-9f27-f814b200b05a" >
 		<http:listener doc:name="Listener" doc:id="e7951150-231b-4a41-ba75-0104d9a2e066" config-ref="HTTP_Listener_config" path="/awsmsg"/>
